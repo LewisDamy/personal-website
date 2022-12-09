@@ -1,0 +1,49 @@
+.important-stuff {
+    font-weight: bold;
+}
+
+.important-text {
+    font-style: italic;
+}
+
+.context-explain {
+    text-align: justify;
+    /*word-break: break-all;*/
+    /*width:50%;*/
+    /*word-wrap:break-word;*/
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+img {
+    width: 230px;
+    margin-top: 20px;
+    border-radius:15px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 30%;
+    align-content: center;
+}
+
+.photo_1 {
+    margin-bottom: 50px;
+    width: 350px;
+}
+
+
+.photo_2 {
+    width: 450px;
+    margin-bottom: 80px;
+}
+
+.photo_3 {
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.photo_4 {
+    width: 350px;
+}

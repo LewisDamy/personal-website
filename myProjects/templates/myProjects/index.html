@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Projects
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'project.css' %}"/>
+{% endblock %}
+
+{% block content_3 %}
+    <div>
+        <h3>This is my Projects webpage</h3>
+        <p>Here we have a couple of my personal projects!</p>
+    </div>
+
+{#    {% for value in item %}#}
+{#        <p>{{ value.1.0 }}</p>#}
+{#    {% endfor %}#}
+{#    <p>{{ projects }}</p>#}
+
+    <ul>
+        {% for project in projects %}
+            <li>
+                <div class="block">
+                    <a href="{% url 'projects-list' project.0 %}">{{ project.0 }}
+                        <img src="{% static project.1.1 %}">
+                    </a>
+                    <p>{{ project.1.0 }}</p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+{#    {% block content_2 %}#}
+{#        {% for project in projects %}#}
+{#                <img src="{% static project.1.1 %}">#}
+{#        {% endfor %}#}
+{#    {% endblock %}#}
+{% endblock %}
+

@@ -1,0 +1,19 @@
+h3{
+    align-items: center;
+    margin-top: 10px;
+}
+
+img { /* CSS Style by type e.g.:<img> */
+    width: 200px;
+    margin-top: 20px;
+    border-radius:15px;
+    height: auto;
+    max-width: 100%;
+}
+
+.block {
+    border: 2px;
+    padding: 5px;
+    border-radius: 15px;
+    align-items: center;
+}

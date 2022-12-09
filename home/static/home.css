@@ -1,0 +1,16 @@
+.personalPhoto { /* CSS Style by type e.g.:<img> */
+    width: 500px;
+    margin-top: 20px;
+    border-radius:15px;
+    height: auto;
+    max-width: 100%;
+}
+
+.main-text { /* CSS Style by class */
+    text-align: justify;
+}
+
+.content_3 {
+    text-align: center;
+}
+

@@ -1,0 +1,16 @@
+
+.hobbiesPhoto { /* CSS Style by type e.g.:<img> */
+    width: 400px;
+    margin-top: 20px;
+    border-radius:15px;
+    height: auto;
+    max-width: 100%;
+}
+
+.column {
+    text-align: center;
+}
+
+.text-inside-column {
+    padding-top: 75px;
+}

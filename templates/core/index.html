@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!-- Don't forget to add in settings.py 'DIRS': [BASE_DIR / "templates"]-->
+{% load static %}
+<!-- Don't forget to add in settings.py STATIC_URL = [ BASE_DIR / 'static' ]-->
+
+{%  block title %}
+    Homepage
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'home.css' %}"/>
+{% endblock %}
+
+{% block content_1 %}
+
+{% endblock %}
+
+{% block content_2 %}
+    <section id="about">
+    <h2>What I Do</h2>
+    <p>
+        I love programming, I love to help others and I enjoy exploring new
+        technologies in general!
+        My to keep on growing as a developer - and if I could help you do
+        the same, I'd be very happy!
+    </p>
+    </section>
+{% endblock %}

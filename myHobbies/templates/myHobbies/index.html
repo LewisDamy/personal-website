@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+<!-- Don't forget to add in settings.py 'DIRS': [BASE_DIR / "templates"]-->
+{% load static %}
+<!-- Don't forget to add in settings.py STATIC_URL = [ BASE_DIR / 'static' ]-->
+
+{% block css_files %}
+        <link rel="stylesheet" href="{% static 'hobbies.css' %}"/>
+{% endblock %}
+
+{% block title %}Hobbies{% endblock %}
+
+
+{% block content_1 %}
+{#    {{ amountHobbies }}#}
+{% endblock %}
+
+{% block content_3 %}
+        <div class="main_content">
+                <div class="row">
+                    {% for hobbie in hobbies %}
+                        {% if forloop.counter|divisibleby:2 %}
+                                <div class="column">
+                                    <div class="text-inside-column">
+                                        <h2>{{ hobbie.0 }}</h2>
+                                        <p>{{ hobbie.1.0 }}</p>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <img src='{% static hobbie.1.1 %}' class="hobbiesPhoto">
+                                </div>
+
+                        {% else %}
+                            <div class="column">
+                                <img src='{% static hobbie.1.1 %}' class="hobbiesPhoto">
+                            </div>
+                            <div class="column">
+                                <div class="text-inside-column">
+                                    <h2>{{ hobbie.0 }}</h2>
+                                    <p>{{ hobbie.1.0 }}</p>
+                                </div>
+                            </div>
+
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+        </div>
+{% endblock %}

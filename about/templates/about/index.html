@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+<!-- Don't forget to add in settings.py 'DIRS': [BASE_DIR / "templates"]-->
+{% load static %}
+<!-- Don't forget to add in settings.py STATIC_URL = [ BASE_DIR / 'static' ]-->
+
+{%  block title %}
+    About
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'about.css' %}"/>
+
+{% endblock %}
+
+{% block content_3 %}
+    <div class="row">
+        <div class="column">
+            <h2>Graduation</h2>
+            <ul>
+                <li>
+                    Federal University of Sao Paulo, SP, Brazil (UNIFESP)
+                    <p class="important-text">Bachelor of Science, Technology</p>
+                    <p class="important-stuff">Accomplishments:</p>
+                    <ul>
+                        <li>
+                            Teacher Assistant in Calculus I
+                        </li>
+                        <li>
+                            Teacher Assistant Computer Logic 101
+                        </li>
+                        <li>
+                            Cumulative GPA: <a class="important-stuff">3.21</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+
+            <h2>Courses</h2>
+            <ul>
+                <li>
+                    <div>
+                        <a href="https://cs50.harvard.edu/x/2022/">Harvard, CS50x Introduction to Computer Science</a>
+                    </div>
+                    <div class="context-explain">
+                        <p>
+                            An entry-level course taught by David J. Malan, CS50 teaches
+                            students how to think algorithmically and solve problems efficiently.
+                        </p>
+                    </div>
+                    <p>
+                        Topics include:
+                        <ul>
+                            <li>Abstraction, Encapsulation, Resource Management</li>
+                            <li>Algorithms, Data Structures</li>
+                            <li>Software Engineering, Security</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Languages include:
+                        <ul>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>JavaScript</li>
+                            <li>CSS/HTML</li>
+                        </ul>
+                    </p>
+        {#            Official Certificate of conclusion:#}
+        {#            <a href="https://courses.edx.org/certificates/7bff4a5ba5094e9789351644ff3f9b2a">#}
+        {#                Link </a>#}
+                </li>
+
+                <li>
+                    <div>
+                        <a href="https://www.udemy.com/course/django-and-python-full-stack-developer-masterclass/">
+                            Django 4 and Python Full-Stack Course (Udemy)
+                        </a>
+                        <div class="context-explain">
+                            <p>
+                                Course designed to become a Web Developer by teaching the latest technologies:
+                            </p>
+                        </div>
+                        <p>
+                            <ul>
+                                <li>Python 3.x</li>
+                                <li>HTML/CSS/Bootstrap</li>
+                                <li>Django Views, Templates, Forms</li>
+                                <li>Django Admin and Customization</li>
+                                <li>ORM, User Authentication</li>
+                                <li>Django Class Based Views</li>
+                            </ul>
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                        <div>
+                            <a href="https://www.udemy.com/course/react-native-the-practical-guide/">
+                                React Native Course (Udemy)
+                            </a>
+                            <div class="context-explain">
+                                <p>
+                                    Course to build real native mobile apps for iOS and Android. Learn
+                                    how to use key mobile app features like:
+                                </p>
+                            </div>
+                            <p>
+                                <ul>
+                                    <li>JavaScript (ES6+)</li>
+                                    <li>Google Maps API</li>
+                                    <li>Device Camera</li>
+                                    <li>user Authentication flow</li>
+                                    <li>Connection to backend server from application</li>
+                                    <li>Debugging instructions</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="column">
+                <img src='{% static "images/about_image_1.png" %}' class="photo_1" >
+                <img src='{% static "images/about_image_2.jpeg" %}' class="photo_2">
+                <img src='{% static "images/about_image_3.jpeg" %}' class="photo_3">
+                <img src='{% static "images/about_image_4.jpeg" %}' class="photo_4">
+        </div>
+    </div>
+{% endblock %}

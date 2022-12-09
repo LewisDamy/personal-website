@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{%  block title %}
+    {{ content }}
+{% endblock %}
+
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'home.css' %}"/>
+    <link rel="stylesheet" href="{% static 'project.css' %}"/>
+{% endblock %}
+
+{% block content_1 %}
+    <h2>{{ content|title }}</h2>
+    <img src="{% static img_path %}" class="project_photo"/>
+{% endblock %}
+
+{% block content_2 %}
+    <p>{{ content_text }}</p>
+{% endblock %}
