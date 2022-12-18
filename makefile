@@ -8,7 +8,7 @@ format:
 lint:
 	#pylint --disable=R,C *.py
 test:
-	#test
+	python manage.py runserver
 build:
 	docker build -t personal-website .
 run:
