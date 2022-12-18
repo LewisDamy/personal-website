@@ -12,7 +12,7 @@ test:
 build:
 	docker build -t personal-website .
 run:
-	docker run -p 8000:8000 --rm personal-website:lastest
+	docker run -p 8000:8000 --rm personal-website:latest
 deploy:
 	#deploy
 all:
