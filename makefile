@@ -16,4 +16,4 @@ run:
 deploy:
 	#deploy
 all:
-	install lint test deploy
+	instal	l lint test deploy

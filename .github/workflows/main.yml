@@ -30,7 +30,7 @@ jobs:
 
       - name: Creating .env and saving the key
         run: |
-          echo '$SECRET_KEY' > .env
+          echo "SECRET_KEY = '$SECRET_KEY'" > .env
 
       - name: Building container and installing dependencies
         run: |
