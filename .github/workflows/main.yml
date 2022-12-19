@@ -28,6 +28,10 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
+      - name: Creating .env and saving the key
+        run: |
+          echo '$SECRET_KEY' > .env
+
       - name: Building container and installing dependencies
         run: |
           make build
