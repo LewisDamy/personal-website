@@ -4,6 +4,7 @@ run-name: ${{ github.actor }} is using GitHub Actions
 env:
   AZURE_WEBAPP_NAME: Personal-Website-Lewis
   PYTHON_VERSION: '3.9'
+  SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
 on:
   push:
