@@ -29,6 +29,8 @@ jobs:
       - name: Starting virtual environment
         run: source .venv/bin/activate
 
+      - name: Installing
+
       - name: Creating .env and saving the key
         run: |
           echo "SECRET_KEY = '$SECRET_KEY'" > .env
@@ -36,6 +38,7 @@ jobs:
       - name: Building container and installing dependencies
         run: |
           make build
-      - name: Test application
-        run: |
-          python manage.py test
+
+#      - name: Test application
+#        run: |
+#          python manage.py test
