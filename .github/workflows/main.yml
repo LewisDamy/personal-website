@@ -36,4 +36,4 @@ jobs:
 
       - name: Test Application
         run: |
-          make unit_test
+          make run
