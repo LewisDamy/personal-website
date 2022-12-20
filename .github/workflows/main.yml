@@ -23,10 +23,11 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'pip'
 
-      - name: Create and start virtual environment
-        run: |
-          python -m venv venv
-          source venv/bin/activate
+      - name: Create virtual environment
+        run: python -m venv .venv
+
+      - name: Starting virtual environment
+        run: source .venv/bin/activate
 
       - name: Creating .env and saving the key
         run: |
