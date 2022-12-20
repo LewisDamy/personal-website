@@ -35,6 +35,6 @@ jobs:
       - name: Building container and installing dependencies
         run: |
           make build
-      - name: Run application
+      - name: Test application
         run: |
-          make unit_tests
+          python manage.py test
