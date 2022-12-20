@@ -33,6 +33,7 @@ jobs:
       - name: Building container and installing dependencies
         run: |
           make build
-#      - name: Run application
-#        run: |
-#          make run
+
+      - name: Test Application
+        run: |
+          make unit_test
