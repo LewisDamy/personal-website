@@ -22,12 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
+# SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']] if 'ALLOWED_HOSTS' in os.environ else []
 
+CSRF_TRUSTED_ORIGINS = 'https://' + os.environ['ALLOWED_HOSTS']
+
+SECURE_SSL_HOST = os.environ['SECURE_SSL_HOST']
 
 # Application definition
 
