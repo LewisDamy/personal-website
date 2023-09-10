@@ -27,12 +27,12 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = ["*"]
-ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']] if 'ALLOWED_HOSTS' in os.environ else []
+ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']] if 'ALLOWED_HOSTS' in os.environ else []
 
-CSRF_TRUSTED_ORIGINS = 'https://' + os.environ['ALLOWED_HOSTS']
+CSRF_TRUSTED_ORIGINS = 'https://lewis-personal-website.azurewebsites.net/'
 
-SECURE_SSL_HOST = os.environ['SECURE_SSL_HOST']
+# SECURE_SSL_HOST = os.environ['SECURE_SSL_HOST']
 
 # Application definition
 
